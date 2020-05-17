@@ -1,19 +1,23 @@
+let viewFile = require("./commands/viewFile");
+let treefyFile = require("./commands/treefyFile");
+let untreefyFile = require("./commands/untreefyFile");
+let helpFile = require("./commands/helpFile");
 let input = process.argv.slice(2);
 
 let cmd = input[0];
 
 switch (cmd) {
   case "view":
-    console.log("view command is implemented");
+    viewFile.view();
     break;
   case "treefy":
-    console.log("treefy command is implemented");
+    treefyFile.treefy();
     break;
   case "untreefy":
-    console.log("untreefy command is implemented");
+    untreefyFile.untreefy();
     break;
   case "help":
-    console.log("help command is implemented");
+    helpFile.help();
     break;
   default:
     console.log("enter a valid command");
