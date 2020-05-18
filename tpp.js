@@ -9,7 +9,7 @@ let cmd = input[0];
 
 switch (cmd) {
   case "view":
-    viewFile.view();
+    viewFile.view(input[1], input[2]);
     break;
   case "treefy":
     treefyFile.treefy();
